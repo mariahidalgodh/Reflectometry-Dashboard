@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import MapOL from "./Map/MapOL";
+import VectorLayerOL from "./Layers/VectorLayerOL";
+import LayersOL from "./Layers/LayersOL";
+import reflectivityGeojson from "./data/reflectivity_points.geojson";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MapOL>
+        <LayersOL>
+          <VectorLayerOL url={reflectivityGeojson}/>
+        </LayersOL>
+      </MapOL>
     </div>
   );
 }
