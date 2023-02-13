@@ -23,7 +23,7 @@ const VIEW_INIT = {
   // projection: 'EPSG:4326', // Set projection in WGS84 system to get geographic coordinates (long, lat)
   projection: 'EPSG:3857', // Set projection in WGS84 system to get cartesian coordinates (x, y)
   // center: [1.605337, 50.798463],
-  center: [190705, 6582721],
+  center: [170000, 6580000],
   zoom: 11,
   minZoom: 5,
   maxZoom: 15,
